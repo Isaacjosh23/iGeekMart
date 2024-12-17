@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="iGeekmark is a place where you can get high quailty customized merch of your choice. We craft an experience for your community, employees, customers to wear value. Rep Your Passion, Wear Your Fandom."
+    />
+
+    <!-- Font Awesome Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="img/favicon/favicon-desktop.png" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- CSS Files -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="../src/style.css" rel="stylesheet" />
+
+    <!-- JAVASCRIPT -->
+    <script defer src="js/script.js"></script>
+
+    <title>Why iGeek &mdash; Rep You Passion, Wear Your Fandom</title>
+  </head>
+  <body class="font-body overflow-x-hidden">
+    <header
+      class="bg-primary-300 py-8 px-10 md:top-0 md:bottom-0 md:w-full relative nav-open header"
+    >
+      <div
+        class="flex items-center justify-between md:px-[3.2rem] md:my-0 md:mx-auto"
+      >
+        <div>
+          <a href="#">
+            <img
+              src="img/why-index-logo.png"
+              alt="igeek-logo"
+              class="w-12 lg:w-[3.5rem] xl:w-[4.5rem]"
+            />
+          </a>
+        </div>
+
+        <nav
+          class="main-nav absolute md:relative md:h-auto md:w-auto top-0 md:left-0 left-[12.7rem] mm:left-[15rem] ml:left-[17rem] w-[60%] h-screen flex items-center justify-center md:justify-normal bg-white backdrop-blur-[10px] md:bg-transparent translate-x-[102%] transition-all delay-[0.5s] opacity-0 pointer-events-none invisible"
+        >
+          <ul class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex flex-col md:flex-row gap-8">
+              <li>
+                <a
+                  href="#"
+                  class="text-[1.2rem] show-modal lg:text-[1.4rem] xl:text-[1.6rem] text-primary-100 font-black articulat"
+                  >Why iGeek</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-[1.2rem] show-modal lg:text-[1.4rem] xl:text-[1.6rem] text-primary-100 font-black articulat"
+                  >Get in touch</a
+                >
+              </li>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <li>
+                <a
+                  href="#"
+                  class="flex gap-2 show-modal items-center text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem] font-black articulat bg-accents-600 hover:bg-accents-700 active:bg-accents-800 transition-all ease-linear delay-[0.3s] text-white py-2 px-4 lg:py-[1.4rem] lg:px-8 rounded-[50rem]"
+                >
+                  <span>Place order</span>
+                  <span>
+                    <img
+                      src="img/arrow-down-left-01-sharp.png"
+                      alt="arrow-icon"
+                    />
+                  </span>
+                </a>
+              </li>
+
+              <img
+                src="img/nigeria.png"
+                alt="country-flag"
+                class="hidden md:block"
+              />
+            </div>
+
+            <div class="flex items-center gap-4 md:hidden">
+              <li>
+                <a
+                  href="#"
+                  class="text-primary-100 font-black text-4xl articulat"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-primary-100 font-black text-4xl articulat"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-primary-100 font-black text-4xl articulat"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-primary-100 font-black text-4xl articulat"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
+        <button
+          class="btn-mobile-nav block cursor-pointer bg-none border-none md:hidden"
+        >
+          <ion-icon
+            name="menu-outline"
+            class="text-5xl text-primary-100 icon-mobile-nav block"
+          ></ion-icon>
+
+          <ion-icon
+            name="close-outline"
+            class="text-5xl text-primary-100 icon-mobile-nav hidden"
+          ></ion-icon>
+        </button>
+      </div>
+
+      <div
+        class="flex modal hidden-modal flex-col justify-center items-center md:w-[50rem] lg:w-[75rem] bg-white rounded-3xl overflow-hidden shadow-[0_6px_30px_-15px_rgba(0,0,0,0.25)] m-auto"
+      >
+        <div
+          class="relative text-center py-12 md:py-20 px-8 bg-secondary-600 overflow-hidden w-full"
+        >
+          <div
+            class="flex flex-col justify-center gap-3 md:gap-5 lg:m-auto md:w-[46rem] lg:w-[51rem]"
+          >
+            <h3
+              class="text-3xl md:text-5xl md:leading-[4rem] lg:leading-[5rem] lg:text-6xl font-bold text-primary-300 capitalize"
+            >
+              We are always happy to read from you
+            </h3>
+
+            <p
+              class="text-xs md:text-[1rem] lg:text-[1.6rem] lg:leading-[3rem] text-primary-300 articulat leading-5"
+            >
+              Write to us about anything, be it complaints, recommendations,
+              enquires, or just say hi 🤗
+            </p>
+
+            <div>
+              <img
+                src="img/form-img/Vector 6915.png"
+                alt="curved-lines"
+                class="w-[4.5rem] md:w-32 lg:w-48 absolute top-[11.8rem] md:top-[17rem] ml:top-[10.5rem] left-[2rem] lg:left-[5.8rem] lg:top-[21.2rem] translate-x-[-50%] translate-y-[-50%]"
+              />
+              <img
+                src="img/form-img/Vector 6913.png"
+                alt="curved-lines"
+                class="w-[4.5rem] md:w-32 lg:w-48 absolute top-[2.5rem] md:top-[4.3rem] mm:left-[31.4rem] ml:left-[36.4rem] left-[25.8rem] lg:left-[69rem] lg:top-[6.5rem] md:left-[46.1rem] translate-x-[-50%] translate-y-[-50%]"
+              />
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="py-12 px-8 font-poppins lg:grid lg:grid-cols-2 lg:gap-x-10 lg:justify-center"
+        >
+          <div>
+            <div class="mb-6 md:mb-11">
+              <label
+                for="Fullname"
+                class="block mb-2 md:mb-4 font-semibold md:text-xl"
+                >Fullname</label
+              >
+
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-[1.15rem] md:left-[1.45] flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-user text-[1.3rem] md:text-[1.6rem]"
+                  ></i>
+                </span>
+
+                <input
+                  id="Fullname"
+                  type="text"
+                  placeholder="John Doe"
+                  class="w-96 md:w-[40rem] md:h-[4.8rem] lg:w-[30rem] py-4 pl-12 md:pl-16 pr-8 text-[1rem] md:text-xl border-[1px] rounded-full text-inherit focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-6 md:mb-11">
+              <label
+                for="email"
+                class="block mb-2 md:mb-4 font-semibold md:text-xl"
+                >Email Address</label
+              >
+
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-[1.15rem] md:left-[1.45rem] flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-envelope text-[1.3rem] md:text-[1.6rem]"
+                  ></i>
+                </span>
+
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="example@gmail.com"
+                  class="w-96 md:w-[40rem] md:h-[4.8rem] lg:w-[30rem] py-4 pl-12 md:pl-16 pr-8 text-[1rem] md:text-xl border-[1px] rounded-full text-inherit focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mb-6 md:mb-11">
+              <p class="capitalize font-semibold mb-2 md:mb-4 md:text-xl">
+                select subject
+              </p>
+
+              <div
+                class="flex flex-col md:grid md:grid-cols-2 gap-2 lg:gap-x-8"
+              >
+                <!-- OPTION 1 -->
+                <div>
+                  <label class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="general-inquiry"
+                      class="form-radio h-5 w-5"
+                    />
+
+                    <span
+                      class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                      >General inquiry</span
+                    >
+                  </label>
+                </div>
+
+                <!-- OPTION 2 -->
+                <div>
+                  <label class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="service-complaint"
+                      class="form-radio h-5 w-5"
+                    />
+
+                    <span
+                      class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                      >Service Complaint</span
+                    >
+                  </label>
+                </div>
+
+                <!-- OPTION 3 -->
+                <div>
+                  <label class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="recommendations"
+                      class="form-radio h-5 w-5"
+                    />
+
+                    <span
+                      class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                      >Recommendations</span
+                    >
+                  </label>
+                </div>
+
+                <!-- OPTION 4 -->
+                <div>
+                  <label class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="just-saying-hi"
+                      class="form-radio h-5 w-5"
+                    />
+
+                    <span
+                      class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                      >Just saying hi</span
+                    >
+                  </label>
+                </div>
+
+                <!-- OPTION 5 -->
+                <div>
+                  <label class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="others"
+                      class="form-radio h-5 w-5"
+                    />
+
+                    <span
+                      class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                      >Others</span
+                    >
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-full">
+            <label
+              for="message"
+              class="block mb-2 md:mb-4 font-semibold md:text-xl"
+              >Message</label
+            >
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+              class="w-96 text-[1rem] md:text-xl md:w-[40rem] lg:w-[62.5rem] h-40 lg:h-48 py-4 pl-6 pr-8 rounded-3xl border-[1px] focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+              required
+            ></textarea>
+          </div>
+        </form>
+
+        <div class="flex items-center gap-7 pb-12 px-10">
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-secondary-700 py-2 md:py-4 lg:py-[1.4rem] px-3 md:px-5 lg:px-8 font-black text-white text-xs md:text-[1.3rem] articulat rounded-[50rem]"
+          >
+            <span>Send message</span>
+            <img
+              src="img/arrow-down-left-01-sharp.png"
+              alt="arrow"
+              class="w-[1.3rem] md:w-[1.6rem] lg:w-8"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="flex close-modal items-center gap-2 bg-transparent py-2 md:py-4 lg:py-[1.4rem] px-3 md:px-5 lg:px-8 font-black text-secondary-600 border-[1px] text-xs md:text-[1.3rem] articulat rounded-[50rem]"
+          >
+            <span>Discard</span>
+
+            <ion-icon
+              name="close-circle-outline"
+              class="text-[1.3rem] md:text-[1.6rem] lg:w-8 text-[#e72b4e]"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="overlay hidden-modal"></div>
+    </header>
+
+    <main>
+      <section class="bg-primary-300 py-8 md:py-28 xl:py-36 section-hero">
+        <div
+          class="container grid grid-cols-1 md:grid-cols-[29rem_1fr] lg:grid-cols-[37rem_1fr] xl:grid-cols-2 md:px-[6.2rem] lg:px-[10.2rem ] gap-y-5"
+        >
+          <div class="text-center md:text-left">
+            <span
+              class="text-primary-100 font-bold text-4xl md:text-6xl lg:text-8xl xl:text-[8rem]"
+              >Why?</span
+            >
+
+            <h1
+              class="text-accents-900 font-bold text-5xl md:text-8xl lg:text-9xl xl:text-[12rem] leading-[2.4rem] mb-4 lg:mb-9 md:leading-[3.6rem] lg:leading-[4.9rem] xl:leading-[7.5rem]"
+            >
+              IGeek<span class="md:block">mart</span>
+            </h1>
+
+            <p
+              class="text-primary-100 articulat mb-6 xl:mb-9 text-[1rem] lg:text-xl xl:text-[1.6rem] xl:leading-10"
+            >
+              We craft an experience for your community, employees, customers to
+              wear value.
+            </p>
+
+            <div class="md:flex md:items-center md:gap-4">
+              <div class="inline-block">
+                <a
+                  href="#"
+                  class="flex gap-2 items-center font-black text-xs md:text-[1rem] lg:text-[1.4rem] md:py-4 md:px-6 lg:py-[1.4rem] lg:px-8 py-2 px-4 text-primary-100 border-solid rounded-[50rem] border-[1px]"
+                >
+                  <span>See projects</span>
+                  <img
+                    src="img/icon/elements.png"
+                    alt="arrow-icon"
+                    class="w-3 lg:w-4"
+                  />
+                </a>
+              </div>
+
+              <div class="hidden md:block">
+                <ul class="flex items-center gap-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-3xl lg:text-4xl xl:text-[2.8rem] text-secondary-600"
+                      ><ion-icon name="logo-facebook"></ion-icon
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-3xl lg:text-4xl xl:text-[2.8rem] text-secondary-600"
+                      ><ion-icon name="logo-instagram"></ion-icon
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-3xl lg:text-4xl xl:text-[2.8rem] text-secondary-600"
+                      ><ion-icon name="logo-twitter"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <img
+              src="img/Group 2324.png"
+              alt="igeek merch"
+              class="w-4/5 xl:w-[95%]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 md:py-28 xl:py-36">
+        <div class="container md:px-[6.2rem] lg:px-[10.2rem]">
+          <div
+            class="flex flex-col items-center gap-6 md:gap-10 xl:gap-14 text-center mb-20"
+          >
+            <div>
+              <h2
+                class="text-primary-100 font-bold text-4xl md:text-6xl lg:text-8xl xl:text-x[7rem] mb-2"
+              >
+                What We Do!
+              </h2>
+
+              <p class="text-primary-100 text-[1rem] lg:text-xl xl:text-2xl">
+                Anything merch, we’ve got you covered 💯 ✅
+              </p>
+            </div>
+
+            <div>
+              <img
+                src="img/step-imgs/Frame 1171276330.png"
+                alt="igeek"
+                class="w-24 md:w-40 lg:w-52 xl:w-64"
+              />
+            </div>
+          </div>
+
+          <div class="md:flex md:items-center">
+            <div>
+              <h3
+                class="text-secondary-500 font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 xl:mb-6"
+              >
+                Easy Marketing
+              </h3>
+
+              <p
+                class="text-secondary-600 font-medium text-xs md:text-[1rem] md:leading-[1.5rem] xl:leading-[2.5rem] lg:text-xl xl:text-2xl articulat"
+              >
+                From corporate gifts to employee onboarding and giveaways, build
+                custom merch boxes or order high-quality merch in bulk at
+                cost-effective rates.
+              </p>
+            </div>
+
+            <div class="pb-4 md:pb-12 flex justify-center">
+              <img
+                src="img/waterbottle.png"
+                alt="lgeek"
+                class="w-96 md:w-[62rem] lg:w-[86rem] xl:w-[122rem]"
+              />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="md:flex md:items-center lg:justify-center md:gap-16">
+            <div class="flex justify-center pt-4 md:py-12">
+              <img
+                src="img/hoodyMerch.png"
+                alt="lgeek"
+                class="w-72 md:w-[28rem] lg:w-[35rem] xl:w-[44rem]"
+              />
+            </div>
+
+            <div class="pb-4 md:w-[26rem] lg:w-[34rem] xl:w-[44rem]">
+              <h3
+                class="text-secondary-500 capitalize font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 xl:mb-6"
+              >
+                Display your growth potential
+              </h3>
+
+              <p
+                class="text-secondary-600 font-medium text-xs md:text-[1rem] md:leading-[1.5rem] lg:text-xl xl:text-2xl xl:leading-[2.5rem] articulat"
+              >
+                The importance of first impressions is what we want to ensure
+                every product leaving our warehouse tells a story about your
+                brand.
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div>
+            <div class="text-center pt-4 md:pt-12 md:flex md:text-left">
+              <h3
+                class="text-secondary-500 font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-3 leading-[1.7rem]"
+              >
+                Turn your employees into ambassadors, and your members into
+                loyal fans.
+              </h3>
+
+              <p
+                class="text-secondary-600 font-medium text-xs md:text-[1rem] lg:text-xl xl:text-2xl md:leading-[1.5rem] xl:leading-[2.5rem] articulat"
+              >
+                Customise your merch for employees, special occasions, customers
+                or events, rep your passion, wear your fandom with iGeekmart, we
+                craft with pride for your pleasure.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-12 xl:mt-32">
+            <img
+              src="img/igeek-purple-box.png"
+              alt="igeek box"
+              class="w-64 md:w-96 lg:w-[32rem] xl:w-[45rem]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary-600 py-8 md:py-28 xl:py-36">
+        <div
+          class="container md:px-[6.2rem] lg:px-[10.2rem] flex flex-col items-center gap-4 md:gap-10 xl:gap-14"
+        >
+          <div class="text-center">
+            <h2
+              class="text-primary-300 text-3xl lg:text-7xl md:text-5xl xl:text-[4.8rem] font-bold"
+            >
+              Craft Merch That Creates A Deeper Connection.
+            </h2>
+          </div>
+
+          <div class="inline-block">
+            <a
+              href="#"
+              class="flex gap-2 items-center justify-center text-xs md:text-[1rem] lg:text-[1.4rem] md:py-4 lg:py-[1.4rem] md:px-6 lg:px-8 font-black text-white bg-accents-600 hover:bg-accents-700 active:bg-accents-800 transition-all ease-linear delay-[0.3s] py-2 px-4 w-32 lg:w-64 md:w-44 rounded-[50rem] articulat"
+            >
+              <span>Place order</span>
+              <img
+                src="img/arrow-down-left-01-sharp.png"
+                alt="arrow-icon"
+                class="w-3 lg:w-5 xl:w-8"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hidden md:block md:bg-primary-300 md:py-28 xl:py-36">
+        <div class="container md:px-[6.2rem] lg:px-[10.2rem] xl:px-0">
+          <div class="grid grid-cols-[2fr_1fr]">
+            <div>
+              <a href="#">
+                <img
+                  src="img/why-index-logo.png"
+                  alt="igeek-logo"
+                  class="w-20 xl:w-20"
+                />
+              </a>
+            </div>
+
+            <div class="flex gap-28 xl:gap-40">
+              <div class="flex flex-col gap-4">
+                <h3
+                  class="text-secondary-600 text-3xl lg:text-4xl xl:text-5xl font-bold"
+                >
+                  iGeek
+                </h3>
+                <ul class="flex flex-col gap-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Why iGeek</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Get in touch</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <h3
+                  class="text-secondary-600 text-3xl lg:text-4xl xl:text-5xl font-bold"
+                >
+                  Socials
+                </h3>
+                <ul class="flex flex-col gap-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Twitter</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Instagram</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Facebook</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-xl lg:text-2xl xl:text-3xl text-secondary-500 font-medium"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="hidden md:block md:text-center xl:text-2xl md:py-8 md:px-16 md:bg-primary-300 md:text-secondary-500"
+      >
+        &copy; 2024 iGeekmart. All rights reserved.
+      </footer>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

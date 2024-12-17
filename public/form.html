@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS Files -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="../src/style.css" rel="stylesheet" />
+    <title>iGeekmart &mdash; Get in touch form</title>
+  </head>
+  <body class="font-body">
+    <main>
+      <section class="py-40 px-8 bg-primary-300 h-[80rem]">
+        <div
+          class="flex flex-col justify-center items-center md:w-[50rem] lg:w-[75rem] bg-white rounded-3xl overflow-hidden shadow-[0_6px_30px_-15px_rgba(0,0,0,0.25)] m-auto"
+        >
+          <div
+            class="relative text-center py-12 md:py-20 px-8 bg-secondary-600 overflow-hidden w-full"
+          >
+            <div
+              class="flex flex-col justify-center gap-3 md:gap-5 lg:m-auto md:w-[46rem] lg:w-[51rem]"
+            >
+              <h3
+                class="text-3xl md:text-5xl md:leading-[4rem] lg:leading-[5rem] lg:text-6xl font-bold text-primary-300 capitalize"
+              >
+                We are always happy to read from you
+              </h3>
+
+              <p
+                class="text-xs md:text-[1rem] lg:text-[1.6rem] lg:leading-[3rem] text-primary-300 articulat leading-5"
+              >
+                Write to us about anything, be it complaints, recommendations,
+                enquires, or just say hi 🤗
+              </p>
+
+              <div>
+                <img
+                  src="img/form-img/Vector 6915.png"
+                  alt="curved-lines"
+                  class="w-[4.5rem] md:w-32 lg:w-48 absolute top-[11.8rem] md:top-[17rem] ml:top-[10.5rem] left-[2rem] lg:left-[5.8rem] lg:top-[21.2rem] translate-x-[-50%] translate-y-[-50%]"
+                />
+                <img
+                  src="img/form-img/Vector 6913.png"
+                  alt="curved-lines"
+                  class="w-[4.5rem] md:w-32 lg:w-48 absolute top-[2.5rem] md:top-[4.3rem] mm:left-[31.4rem] ml:left-[36.4rem] left-[25.8rem] lg:left-[69rem] lg:top-[6.5rem] md:left-[46.1rem] translate-x-[-50%] translate-y-[-50%]"
+                />
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="py-12 px-8 font-poppins lg:grid lg:grid-cols-2 lg:gap-x-10 lg:justify-center"
+          >
+            <div>
+              <div class="mb-6 md:mb-11">
+                <label
+                  for="Fullname"
+                  class="block mb-2 md:mb-4 font-semibold md:text-xl"
+                  >Fullname</label
+                >
+
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-[1.15rem] md:left-[1.45] flex items-center"
+                  >
+                    <i
+                      class="fa-solid fa-user text-[1.3rem] md:text-[1.6rem]"
+                    ></i>
+                  </span>
+
+                  <input
+                    id="Fullname"
+                    type="text"
+                    placeholder="John Doe"
+                    class="w-96 md:w-[40rem] md:h-[4.8rem] lg:w-[30rem] py-4 pl-12 md:pl-16 pr-8 text-[1rem] md:text-xl border-[1px] rounded-full text-inherit focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6 md:mb-11">
+                <label
+                  for="email"
+                  class="block mb-2 md:mb-4 font-semibold md:text-xl"
+                  >Email Address</label
+                >
+
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-[1.15rem] md:left-[1.45rem] flex items-center"
+                  >
+                    <i
+                      class="fa-solid fa-envelope text-[1.3rem] md:text-[1.6rem]"
+                    ></i>
+                  </span>
+
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="example@gmail.com"
+                    class="w-96 md:w-[40rem] md:h-[4.8rem] lg:w-[30rem] py-4 pl-12 md:pl-16 pr-8 text-[1rem] md:text-xl border-[1px] rounded-full text-inherit focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mb-6 md:mb-11">
+                <p class="capitalize font-semibold mb-2 md:mb-4 md:text-xl">
+                  select subject
+                </p>
+
+                <div
+                  class="flex flex-col md:grid md:grid-cols-2 gap-2 lg:gap-x-8"
+                >
+                  <!-- OPTION 1 -->
+                  <div>
+                    <label class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="subject"
+                        value="general-inquiry"
+                        class="form-radio h-5 w-5"
+                      />
+
+                      <span
+                        class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                        >General inquiry</span
+                      >
+                    </label>
+                  </div>
+
+                  <!-- OPTION 2 -->
+                  <div>
+                    <label class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="subject"
+                        value="service-complaint"
+                        class="form-radio h-5 w-5"
+                      />
+
+                      <span
+                        class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                        >Service Complaint</span
+                      >
+                    </label>
+                  </div>
+
+                  <!-- OPTION 3 -->
+                  <div>
+                    <label class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="subject"
+                        value="recommendations"
+                        class="form-radio h-5 w-5"
+                      />
+
+                      <span
+                        class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                        >Recommendations</span
+                      >
+                    </label>
+                  </div>
+
+                  <!-- OPTION 4 -->
+                  <div>
+                    <label class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="subject"
+                        value="just-saying-hi"
+                        class="form-radio h-5 w-5"
+                      />
+
+                      <span
+                        class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                        >Just saying hi</span
+                      >
+                    </label>
+                  </div>
+
+                  <!-- OPTION 5 -->
+                  <div>
+                    <label class="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="subject"
+                        value="others"
+                        class="form-radio h-5 w-5"
+                      />
+
+                      <span
+                        class="text-secondary-600 font-black text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] articulat"
+                        >Others</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-full">
+              <label
+                for="message"
+                class="block mb-2 md:mb-4 font-semibold md:text-xl"
+                >Message</label
+              >
+
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message here"
+                class="w-96 text-[1rem] md:text-xl md:w-[40rem] lg:w-[62.5rem] h-40 lg:h-48 py-4 pl-6 pr-8 rounded-3xl border-[1px] focus:outline-none focus:shadow-custom-inset focus:ring-secondary-400 focus:border-none"
+                required
+              ></textarea>
+            </div>
+          </form>
+
+          <div class="flex items-center gap-7 pb-12 px-10">
+            <a
+              href="#"
+              class="flex items-center gap-2 bg-secondary-700 py-2 md:py-4 lg:py-[1.4rem] px-3 md:px-5 lg:px-8 font-black text-white text-xs md:text-[1.3rem] articulat rounded-[50rem]"
+            >
+              <span>Send message</span>
+              <img
+                src="img/arrow-down-left-01-sharp.png"
+                alt="arrow"
+                class="w-[1.3rem] md:w-[1.6rem] lg:w-8"
+              />
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 bg-transparent py-2 md:py-4 lg:py-[1.4rem] px-3 md:px-5 lg:px-8 font-black text-secondary-600 border-[1px] text-xs md:text-[1.3rem] articulat rounded-[50rem]"
+            >
+              <span>Discard</span>
+
+              <ion-icon
+                name="close-circle-outline"
+                class="text-[1.3rem] md:text-[1.6rem] lg:w-8 text-[#e72b4e]"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
