@@ -35,17 +35,31 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEL);
 
-//////////////////////////////////////////////////////////
-// Display Modal
+///////////////////////////
+// Modal Window
 const modal = document.querySelector(".modal");
+const displayModal = document.querySelector(".show-modal");
+const closeModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close-modal");
-const btnShowModal = document.querySelectorAll(".show-modal");
 
-console.log(btnShowModal);
+const openModal = function () {
+  modal.classList.remove("hidden-modal");
+  overlay.classList.remove("hidden-modal");
+};
 
-for (let i = 0; i < btnShowModal.length; i++)
-  btnShowModal(i).addEventListener("click", function () {
-    console.log("Button clicked");
-    modal.classList.remove("hidden-modal");
-  });
+const hiddenModal = function () {
+  modal.classList.add("hidden-modal");
+  overlay.classList.add("hidden-modal");
+};
+
+displayModal.addEventListener("click", openModal);
+
+closeModal.addEventListener("click", hiddenModal);
+
+overlay.addEventListener("click", hiddenModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden-modal")) {
+    hiddenModal();
+  }
+});

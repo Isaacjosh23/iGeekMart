@@ -83,9 +83,10 @@ html {
   margin-bottom: 3rem;
 }
 
-/* show-modal
-modal
-hidden-modal
-close-modal
-overlay
-hidden-modal */
+/********************/
+/* Modal Window */
+/***************** */
+
+.hidden-modal {
+  display: none;
+}
