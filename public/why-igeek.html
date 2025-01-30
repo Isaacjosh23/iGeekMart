@@ -32,7 +32,7 @@
   </head>
   <body class="font-body overflow-x-hidden">
     <header
-      class="bg-primary-300 py-8 px-10 md:top-0 md:bottom-0 md:w-full relative nav-open header"
+      class="bg-primary-300 py-8 px-10 md:top-0 md:bottom-0 md:w-full relative header"
     >
       <div
         class="flex items-center justify-between md:px-[3.2rem] md:my-0 md:mx-auto"
@@ -48,7 +48,7 @@
         </div>
 
         <nav
-          class="main-nav absolute md:relative md:h-auto md:w-auto top-0 md:left-0 left-[12.7rem] mm:left-[15rem] ml:left-[17rem] w-[60%] h-screen flex items-center justify-center md:justify-normal bg-white backdrop-blur-[10px] md:bg-transparent translate-x-[102%] transition-all delay-[0.5s] opacity-0 pointer-events-none invisible z-[45]"
+          class="main-nav absolute top-0 left-[12.7rem] mm:left-[15rem] ml:left-[17rem] w-[60%] h-screen flex items-center justify-center bg-white backdrop-blur-[10px] translate-x-[102%] transition-all delay-[0.5s] opacity-0 pointer-events-none invisible z-[45] md:hidden"
         >
           <ul class="flex flex-col md:flex-row items-center gap-12">
             <div class="flex flex-col md:flex-row gap-8">
@@ -128,17 +128,65 @@
           </ul>
         </nav>
 
+        <!-- Tablet And Above Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex items-center gap-12 lg:gap-16">
+            <div class="flex items-center gap-8 lg:gap-12">
+              <li>
+                <a
+                  href="why-igeek.html"
+                  class="text-primary-100 text-[1.2rem] font-black articulat lg:text-[1.4rem] xl:text-[1.6rem]"
+                >
+                  Why iGeek</a
+                >
+              </li>
+
+              <button
+                class="text-[1.2rem] tab-nav lg:text-[1.4rem] xl:text-[1.6rem] text-primary-100 font-black articulat"
+              >
+                Get in button
+              </button>
+            </div>
+
+            <div class="md:flex items-center gap-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-[1.2rem] lg:text-[1.4rem] bg-accents-600 hover:bg-accents-700 active:bg-accents-800 text-white py-2 px-4 lg:py-[1.4rem] lg:px-8 articulat font-black flex gap-2 items-center rounded-[50rem] smooth-trans"
+                >
+                  <span>Place order</span>
+                  <span>
+                    <img
+                      src="img/arrow-down-left-01-sharp.png"
+                      alt="arrow-icon"
+                    /> </span
+                ></a>
+              </li>
+
+              <img
+                src="img/nigeria.png"
+                alt="country-flag"
+                class="hidden md:block"
+              />
+            </div>
+          </ul>
+        </nav>
+
+        <div
+          class="absolute top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[40] backdrop-blur-[3px] nav-overlay hidden-modal"
+        ></div>
+
         <button
           class="btn-mobile-nav block cursor-pointer bg-none border-none md:hidden md:z-[45] z-[50]"
         >
           <ion-icon
             name="menu-outline"
-            class="text-5xl text-primary-100 icon-mobile-nav block"
+            class="text-5xl text-primary-100 icon-mobile-nav block open-mobile-nav"
           ></ion-icon>
 
           <ion-icon
             name="close-outline"
-            class="text-5xl text-primary-100 icon-mobile-nav hidden"
+            class="text-5xl text-primary-100 icon-mobile-nav hidden close-mobile-nav"
           ></ion-icon>
         </button>
       </div>
@@ -385,7 +433,7 @@
 
     <main>
       <section
-        class="relative h-screen bg-primary-300 py-8 md:py-28 xl:py-36 section-hero"
+        class="relative md:h-screen h-[75%] ml:h-[90%] bg-primary-300 py-8 md:py-28 xl:py-36 section-hero"
       >
         <!-- Background Images -->
         <div

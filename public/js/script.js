@@ -2,12 +2,35 @@
 
 ///////////////////////////////////////////////////////////
 // Make Mobile Nav Work
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector("header");
+// const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const openMobileNav = document.querySelector(".open-mobile-nav");
+const closeMobileNav = document.querySelector(".close-mobile-nav");
+const mobileOvelay = document.querySelector(".nav-overlay");
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
+const openNav = function () {
+  headerEl.classList.add("nav-open");
+  mobileOvelay.classList.remove("hidden-modal");
+};
+
+const closeNav = function () {
+  headerEl.classList.remove("nav-open");
+  mobileOvelay.classList.add("hidden-modal");
+};
+
+closeMobileNav.addEventListener("click", closeNav);
+
+openMobileNav.addEventListener("click", openNav);
+
+mobileOvelay.addEventListener("click", closeNav);
+
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+// });
+
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.add("nav-open", "nav-overlay");
+// });
 
 ///////////////////////////////////////////////////////////
 // Sticky header
@@ -39,8 +62,12 @@ obs.observe(sectionHeroEL);
 // Modal Window
 const modal = document.querySelector(".modal");
 const displayModal = document.querySelector(".show-modal");
+const tabNav = document.querySelector(".tab-nav");
 const closeModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
+// const navOverlay = document.querySelector(".nav-overlay");
+
+// console.log(navOverlay);
 
 const openModal = function () {
   modal.classList.remove("hidden-modal");
@@ -53,6 +80,8 @@ const hiddenModal = function () {
 };
 
 displayModal.addEventListener("click", openModal);
+
+tabNav.addEventListener("click", openModal);
 
 closeModal.addEventListener("click", hiddenModal);
 

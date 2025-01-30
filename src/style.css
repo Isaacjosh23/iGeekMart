@@ -27,6 +27,10 @@ html {
   font-family: "Articulat CF", sans-serif;
 }
 
+.smooth-trans {
+  transition: all 0.3s;
+}
+
 .nav-open .icon-mobile-nav[name="close-outline"] {
   display: block;
   z-index: 3;
@@ -73,9 +77,6 @@ html {
 
 .stick .section-hero {
   margin-top: 9.2rem;
-}
-.hidden-modal {
-  display: none;
 }
 
 .premium-top {

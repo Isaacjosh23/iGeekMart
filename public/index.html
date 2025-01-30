@@ -31,7 +31,7 @@
     <title>iGeekmart &mdash; Rep Your Passion, Wear Your Fandom</title>
   </head>
   <body class="font-body overflow-x-hidden">
-    <header class="bg-primary-100 py-8 px-10 relative nav-open header">
+    <header class="bg-primary-100 py-8 px-10 relative header">
       <div
         class="flex items-center justify-between md:px-[3.2rem] md:my-0 md:mx-auto"
       >
@@ -45,7 +45,7 @@
         </div>
 
         <nav
-          class="main-nav z-40 md:z-0 absolute md:relative top-0 left-[12.7rem] mm:left-[15rem] ml:left-[17rem] md:left-0 md:bg-transparent w-[60%] md:w-auto h-screen md:h-auto flex items-center justify-center md:justify-normal bg-white bg-opacity-60 backdrop-blur-[10px] translate-x-[102%] transition-all delay-[0.5s] opacity-0 pointer-events-none invisible"
+          class="main-nav z-[45] absolute top-0 left-[12.7rem] mm:left-[15rem] ml:left-[17rem] w-[60%] h-screen flex items-center justify-center bg-white translate-x-[102%] transition-all delay-[0.5s] opacity-0 pointer-events-none invisible md:hidden"
         >
           <ul class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
             <div class="flex flex-col md:flex-row gap-8 lg:gap-12">
@@ -124,23 +124,71 @@
           </ul>
         </nav>
 
+        <!-- Tablet And Above Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex items-center gap-12 lg:gap-16">
+            <div class="flex items-center gap-8 lg:gap-12">
+              <li>
+                <a
+                  href="why-igeek.html"
+                  class="text-primary-200 text-[1.2rem] font-black articulat lg:text-[1.4rem] xl:text-[1.6rem]"
+                >
+                  Why iGeek</a
+                >
+              </li>
+
+              <button
+                class="text-[1.2rem] tab-nav lg:text-[1.4rem] xl:text-[1.6rem] text-primary-200 font-black articulat"
+              >
+                Get in button
+              </button>
+            </div>
+
+            <div class="md:flex items-center gap-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-[1.2rem] lg:text-[1.4rem] bg-accents-600 hover:bg-accents-700 active:bg-accents-800 text-white py-2 px-4 lg:py-[1.4rem] lg:px-8 articulat font-black flex gap-2 items-center rounded-[50rem] smooth-trans"
+                >
+                  <span>Place order</span>
+                  <span>
+                    <img
+                      src="img/arrow-down-left-01-sharp.png"
+                      alt="arrow-icon"
+                    /> </span
+                ></a>
+              </li>
+
+              <img
+                src="img/nigeria.png"
+                alt="country-flag"
+                class="hidden md:block"
+              />
+            </div>
+          </ul>
+        </nav>
+
+        <div
+          class="absolute top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[40] backdrop-blur-[3px] nav-overlay hidden-modal"
+        ></div>
+
         <button
           class="btn-mobile-nav z-50 block cursor-pointer bg-none border-none md:hidden"
         >
           <ion-icon
             name="menu-outline"
-            class="text-5xl text-primary-200 block z-[2] icon-mobile-nav"
+            class="text-5xl text-primary-200 block z-[2] icon-mobile-nav open-mobile-nav"
           ></ion-icon>
 
           <ion-icon
             name="close-outline"
-            class="text-5xl text-primary-200 hidden icon-mobile-nav"
+            class="text-5xl text-primary-200 hidden icon-mobile-nav close-mobile-nav"
           ></ion-icon>
         </button>
       </div>
 
       <div
-        class="flex modal flex-col justify-center items-center md:w-[70rem] lg:w-[75rem] bg-white rounded-3xl overflow-hidden shadow-[0_6px_30px_-15px_rgba(0,0,0,0.25)] m-auto absolute z-[10] lg:translate-x-[50%] lg:translate-y-[50%] lg:top-[-300%] xl:top-[-265%] lg:left-[-23%] xl:left-[-5%] md:top-[20%] md:left-[5%] top-0 ml:left-[5%] left-0 hidden-modal"
+        class="flex modal flex-col justify-center items-center md:w-[70rem] lg:w-[75rem] bg-white rounded-3xl overflow-hidden shadow-[0_6px_30px_-15px_rgba(0,0,0,0.25)] m-auto absolute z-[50] lg:translate-x-[50%] lg:translate-y-[50%] lg:top-[-300%] xl:top-[-265%] lg:left-[-23%] xl:left-[-5%] md:top-[20%] md:left-[5%] top-0 ml:left-[5%] left-0 hidden-modal"
       >
         <div
           class="relative text-center py-8 md:py-5 lg:py-8 px-8 bg-secondary-600 overflow-hidden w-full"
@@ -375,7 +423,7 @@
       </div>
 
       <div
-        class="absolute top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[5] backdrop-blur-[3px] overlay hidden-modal"
+        class="absolute top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] z-[48] backdrop-blur-[3px] overlay hidden-modal"
       ></div>
     </header>
 
