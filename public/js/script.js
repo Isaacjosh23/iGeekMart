@@ -92,3 +92,9 @@ document.addEventListener("keydown", function (e) {
     hiddenModal();
   }
 });
+
+// ///////////////////////////
+// //// Update year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
