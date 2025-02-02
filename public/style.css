@@ -612,12 +612,20 @@ video {
   visibility: hidden;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
 
 .relative{
   position: relative;
+}
+
+.inset-0{
+  inset: 0px;
 }
 
 .inset-y-0{
@@ -649,8 +657,12 @@ video {
   left: 12.7rem;
 }
 
-.left-\[29\.8rem\]{
-  left: 29.8rem;
+.left-\[2\.5rem\]{
+  left: 2.5rem;
+}
+
+.left-\[25rem\]{
+  left: 25rem;
 }
 
 .left-\[50\%\]{
@@ -669,36 +681,12 @@ video {
   top: 40rem;
 }
 
-.top-\[9\.8rem\]{
-  top: 9.8rem;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.top-\[10\%\]{
-  top: 10%;
-}
-
-.top-\[30\%\]{
-  top: 30%;
-}
-
-.top-\[60\%\]{
-  top: 60%;
-}
-
 .top-\[80\%\]{
   top: 80%;
 }
 
-.left-\[25rem\]{
-  left: 25rem;
-}
-
-.left-\[2\.5rem\]{
-  left: 2.5rem;
+.top-\[9\.8rem\]{
+  top: 9.8rem;
 }
 
 .z-30{
@@ -725,20 +713,20 @@ video {
   z-index: 45;
 }
 
-.z-\[48\]{
-  z-index: 48;
-}
-
 .z-\[50\]{
   z-index: 50;
+}
+
+.z-\[53\]{
+  z-index: 53;
 }
 
 .z-\[55\]{
   z-index: 55;
 }
 
-.z-\[53\]{
-  z-index: 53;
+.z-\[0\]{
+  z-index: 0;
 }
 
 .m-auto{
@@ -915,36 +903,36 @@ video {
   width: 25.6rem;
 }
 
-.w-\[4\.5rem\]{
-  width: 4.5rem;
+.w-\[27rem\]{
+  width: 27rem;
 }
 
-.w-\[60\%\]{
-  width: 60%;
+.w-\[4\.5rem\]{
+  width: 4.5rem;
 }
 
 .w-\[8\.1rem\]{
   width: 8.1rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-\[80\%\]{
   width: 80%;
 }
 
-.w-\[32rem\]{
-  width: 32rem;
+.w-full{
+  width: 100%;
 }
 
-.w-\[27rem\]{
-  width: 27rem;
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .max-w-\[120rem\]{
   max-width: 120rem;
+}
+
+.max-w-\[75rem\]{
+  max-width: 75rem;
 }
 
 .translate-x-\[-47\%\]{
@@ -982,6 +970,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[9\.7\%\]{
+  --tw-translate-x: 9.7%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-\[-3\%\]{
   --tw-translate-y: -3%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1014,16 +1007,6 @@ video {
 
 .translate-y-\[32\%\]{
   --tw-translate-y: 32%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[50\%\]{
-  --tw-translate-x: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[9\.7\%\]{
-  --tw-translate-x: 9.7%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1283,6 +1266,10 @@ video {
   padding-left: 3rem;
 }
 
+.pl-16{
+  padding-left: 4rem;
+}
+
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -1297,18 +1284,6 @@ video {
 
 .pt-96{
   padding-top: 24rem;
-}
-
-.pr-24{
-  padding-right: 6rem;
-}
-
-.pl-24{
-  padding-left: 6rem;
-}
-
-.pl-16{
-  padding-left: 4rem;
 }
 
 .text-center{
@@ -1494,12 +1469,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.backdrop-blur-\[10px\]{
-  --tw-backdrop-blur: blur(10px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .backdrop-blur-\[3px\]{
   --tw-backdrop-blur: blur(3px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1520,10 +1489,6 @@ video {
 
 .delay-\[0\.3s\]{
   transition-delay: 0.3s;
-}
-
-.delay-\[0\.5s\]{
-  transition-delay: 0.5s;
 }
 
 .ease-linear{
@@ -1704,18 +1669,6 @@ html {
 }
 
 @media (min-width: 375px){
-  .mm\:left-\[15rem\]{
-    left: 15rem;
-  }
-
-  .mm\:left-\[35\.2rem\]{
-    left: 35.2rem;
-  }
-
-  .mm\:top-\[8\.5rem\]{
-    top: 8.5rem;
-  }
-
   .mm\:left-\[18rem\]{
     left: 18rem;
   }
@@ -1724,12 +1677,12 @@ html {
     left: 29.6rem;
   }
 
-  .mm\:top-\[10rem\]{
-    top: 10rem;
-  }
-
   .mm\:left-\[3\.1rem\]{
     left: 3.1rem;
+  }
+
+  .mm\:top-\[10rem\]{
+    top: 10rem;
   }
 
   .mm\:w-\[31\.5rem\]{
@@ -1738,20 +1691,8 @@ html {
 }
 
 @media (min-width: 425px){
-  .ml\:left-\[17rem\]{
-    left: 17rem;
-  }
-
-  .ml\:left-\[36\.4rem\]{
-    left: 36.4rem;
-  }
-
-  .ml\:left-\[5\%\]{
-    left: 5%;
-  }
-
-  .ml\:top-\[6\.5rem\]{
-    top: 6.5rem;
+  .ml\:left-\[10\.4\%\]{
+    left: 10.4%;
   }
 
   .ml\:left-\[2\.6\%\]{
@@ -1762,16 +1703,12 @@ html {
     left: 22rem;
   }
 
-  .ml\:top-\[9rem\]{
-    top: 9rem;
-  }
-
   .ml\:left-\[32rem\]{
     left: 32rem;
   }
 
-  .ml\:left-\[10\.4\%\]{
-    left: 10.4%;
+  .ml\:top-\[9rem\]{
+    top: 9rem;
   }
 
   .ml\:h-\[90\%\]{
@@ -1792,12 +1729,20 @@ html {
     position: relative;
   }
 
+  .md\:inset-\[29px\]{
+    inset: 29px;
+  }
+
   .md\:bottom-0{
     bottom: 0px;
   }
 
   .md\:left-\[-1rem\]{
     left: -1rem;
+  }
+
+  .md\:left-\[-4\%\]{
+    left: -4%;
   }
 
   .md\:left-\[1\.45\]{
@@ -1812,8 +1757,8 @@ html {
     left: 20rem;
   }
 
-  .md\:left-\[5\%\]{
-    left: 5%;
+  .md\:left-\[4\.4\%\]{
+    left: 4.4%;
   }
 
   .md\:left-\[54rem\]{
@@ -1854,14 +1799,6 @@ html {
 
   .md\:top-\[9\.5rem\]{
     top: 9.5rem;
-  }
-
-  .md\:left-\[-4\%\]{
-    left: -4%;
-  }
-
-  .md\:left-\[4\.4\%\]{
-    left: 4.4%;
   }
 
   .md\:z-\[45\]{
@@ -2723,6 +2660,10 @@ html {
 }
 
 @media (min-width: 1349px){
+  .xl\:inset-\[34px\]{
+    inset: 34px;
+  }
+
   .xl\:left-\[-16\.5rem\]{
     left: -16.5rem;
   }
