@@ -657,10 +657,6 @@ video {
   left: 12.7rem;
 }
 
-.left-\[2\.5rem\]{
-  left: 2.5rem;
-}
-
 .left-\[25rem\]{
   left: 25rem;
 }
@@ -679,10 +675,6 @@ video {
 
 .top-\[40rem\]{
   top: 40rem;
-}
-
-.top-\[80\%\]{
-  top: 80%;
 }
 
 .top-\[9\.8rem\]{
@@ -723,10 +715,6 @@ video {
 
 .z-\[55\]{
   z-index: 55;
-}
-
-.z-\[0\]{
-  z-index: 0;
 }
 
 .m-auto{
@@ -813,6 +801,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[80\%\]{
+  height: 80%;
 }
 
 .w-10{
@@ -903,10 +895,6 @@ video {
   width: 25.6rem;
 }
 
-.w-\[27rem\]{
-  width: 27rem;
-}
-
 .w-\[4\.5rem\]{
   width: 4.5rem;
 }
@@ -919,12 +907,12 @@ video {
   width: 80%;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-\[90\%\]{
   width: 90%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[120rem\]{
@@ -967,11 +955,6 @@ video {
 
 .translate-x-\[85\%\]{
   --tw-translate-x: 85%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[9\.7\%\]{
-  --tw-translate-x: 9.7%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1044,6 +1027,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-stretch{
+  justify-content: stretch;
 }
 
 .justify-items-center{
@@ -1677,10 +1664,6 @@ html {
     left: 29.6rem;
   }
 
-  .mm\:left-\[3\.1rem\]{
-    left: 3.1rem;
-  }
-
   .mm\:top-\[10rem\]{
     top: 10rem;
   }
@@ -1691,14 +1674,6 @@ html {
 }
 
 @media (min-width: 425px){
-  .ml\:left-\[10\.4\%\]{
-    left: 10.4%;
-  }
-
-  .ml\:left-\[2\.6\%\]{
-    left: 2.6%;
-  }
-
   .ml\:left-\[22rem\]{
     left: 22rem;
   }
@@ -1741,10 +1716,6 @@ html {
     left: -1rem;
   }
 
-  .md\:left-\[-4\%\]{
-    left: -4%;
-  }
-
   .md\:left-\[1\.45\]{
     left: 1.45;
   }
@@ -1755,10 +1726,6 @@ html {
 
   .md\:left-\[20rem\]{
     left: 20rem;
-  }
-
-  .md\:left-\[4\.4\%\]{
-    left: 4.4%;
   }
 
   .md\:left-\[54rem\]{
@@ -1787,10 +1754,6 @@ html {
 
   .md\:top-\[18rem\]{
     top: 18rem;
-  }
-
-  .md\:top-\[20\%\]{
-    top: 20%;
   }
 
   .md\:top-\[4\.3rem\]{
@@ -2236,10 +2199,6 @@ html {
     left: -13rem;
   }
 
-  .lg\:left-\[-23\%\]{
-    left: -23%;
-  }
-
   .lg\:left-\[28rem\]{
     left: 28rem;
   }
@@ -2262,10 +2221,6 @@ html {
 
   .lg\:right-\[-2\%\]{
     right: -2%;
-  }
-
-  .lg\:top-\[-300\%\]{
-    top: -300%;
   }
 
   .lg\:top-\[10\%\]{
@@ -2459,11 +2414,6 @@ html {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:translate-x-\[50\%\]{
-    --tw-translate-x: 50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:translate-y-\[10\%\]{
     --tw-translate-y: 10%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2481,11 +2431,6 @@ html {
 
   .lg\:translate-y-\[48\%\]{
     --tw-translate-y: 48%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:translate-y-\[50\%\]{
-    --tw-translate-y: 50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2664,12 +2609,12 @@ html {
     inset: 34px;
   }
 
-  .xl\:left-\[-16\.5rem\]{
-    left: -16.5rem;
+  .xl\:inset-\[45px\]{
+    inset: 45px;
   }
 
-  .xl\:left-\[-5\%\]{
-    left: -5%;
+  .xl\:left-\[-16\.5rem\]{
+    left: -16.5rem;
   }
 
   .xl\:left-\[102\.5rem\]{
@@ -2682,10 +2627,6 @@ html {
 
   .xl\:left-\[86rem\]{
     left: 86rem;
-  }
-
-  .xl\:top-\[-265\%\]{
-    top: -265%;
   }
 
   .xl\:top-\[11\.2rem\]{
