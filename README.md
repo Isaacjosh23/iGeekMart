@@ -9,9 +9,7 @@ iGeekMart is a clean, modern, and responsive e-commerce website concept, focused
 📂 Project Structure
  - index.html — Main landing page
 
- - products.html — Products listing page
-
- - about.html — About the brand
+ - why-igeek.html — Why you need to choose iGeekmart
 
  - style.css — Styles and responsive design
 
