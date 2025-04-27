@@ -3,8 +3,8 @@ Your One-Stop Shop for All Things Tech.
 
 iGeekMart is a clean, modern, and responsive e-commerce website concept, focused on selling gadgets, electronics, and digital accessories with a sleek user experience.
 
-🌐 Live Demo
-🔗 View iGeekMart Website
+🌐 Live Site
+ - https://igeekmart.netlify.app/
 
 📂 Project Structure
  - index.html — Main landing page
